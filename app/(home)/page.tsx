@@ -34,6 +34,7 @@ export default function Home() {
       <div className={styles.bgm}>
         <p className={styles.title}>💿BGM</p>
         <div className={styles.decorative}></div>
+        
       </div>
 
       <div className={styles.miniRoom}>
