@@ -1,11 +1,11 @@
 .container {
-  width: 200px;
+  width: 350px;
   display: flex;
   align-items: center;
 
   position: fixed;
   top: 70px;
-  right: 10%;
+  right: 4%;
   transform: translateX(-50%);
 
   z-index: 999;
@@ -15,10 +15,14 @@
     font-size: 20px;
     border: none;
     background-color: transparent;
+
+    display: flex;
+    align-items: center;
   }
 }
 
 .container p {
+  margin-right: 10px;
   white-space: nowrap;
   animation: slideText 5s steps(20) infinite;
 }
@@ -30,7 +34,7 @@
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-130%);
     opacity: 1;
   }
 }

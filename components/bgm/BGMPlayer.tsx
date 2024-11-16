@@ -26,7 +26,7 @@ const BGMPlayer = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.text}>생일 축하 BGM</p>
+      <p className={styles.text}>Happy Birthday to You (Piano Version)</p>
       <audio ref={audioRef} loop>
         <source src="/assets/audio/bgm.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
