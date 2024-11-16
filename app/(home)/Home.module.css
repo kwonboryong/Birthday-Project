@@ -1,118 +1,38 @@
-/* .container {
-  height: 100vh;
-  background-color: #747474;
+.container {
+  display: grid;
+  grid-template-areas:
+    "updateNews bgm"
+    "miniRoom miniRoom";
+  gap: 10px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .firstBox {
-    width: 80%;
-    height: 85vh;
+  width: 92%;
+  /* height: 160%; */
+  
+  border: 1px solid rgba(32, 32, 211, 0.336);
 
-    border-radius: 15px;
-    background-color: #59B2D6;
-    border: 1px solid rgba(0, 0, 0, 0.7);
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.updateNews {
+  grid-area: updateNews;
 
-    .secondBox {
-      width: 90%;
-      height: 85%;
+  border: 1px solid red;
 
-      border-radius: 15px;
-      background-color: #EEEEEE;
-      border: 1px solid rgba(0, 0, 0, 0.7);
+}
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
+.bgm {
+  grid-area: bgm;
 
-      position: relative;
+  border: 1px solid red;
+}
 
-      .ling {
-        margin-bottom: 10px;
+.miniRoom {
+  grid-area: miniRoom;
 
-        .lingImg {
-          width: 45px;
-          height: 20px;
-          opacity: 0.5;
-        }
-      }
+  border: 1px solid red;
 
-      .lingBox {
-        position: fixed;
-        top: 220px;
-        left: 540px;
-      }
-
-      .lingBottomBox {
-        position: fixed;
-        top: 450px;
-        left: 540px;
-      }
-
-      .leftBox {
-        width: 30%;
-        height: 88%;
-        border-radius: 15px;
-        background-color: white;
-        border: 1px solid rgba(0, 0, 0, 0.7);
-
-        margin-top: 20px;
-      }
-    }
-
-    .rightBox {
-      width: 60%;
-      height: 88%;
-      border-radius: 15px;
-      background-color: white;
-      border: 1px solid rgba(0, 0, 0, 0.7);
-
-      margin-top: 20px;
-
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
-
-    .sideBox {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-
-      margin-top: 16px;
-      margin-right: -90px;
-
-      width: 220px;
-      height: 220px;
-
-      .sideMenu {
-        width: 89px;
-        height: 38px;
-        background-color: white;
-
-        border-radius: 0 10px 10px 0;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-        border-left: none;
-
-        margin-bottom: 5px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .sideMenu:hover {
-        color: white;
-        background-color: #2B89BF;
-      }
-    }
+  .miniRoomImg {
+    width: 95%;
+    height: 90%;
   }
-} */
+}
