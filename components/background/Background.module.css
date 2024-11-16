@@ -46,19 +46,19 @@
       .lingBox {
         position: fixed;
         top: 30vh; 
-        left: 39.3vw; 
+        left: 35.5vw; 
         transform: translateX(-50%);
       }
       
       .lingBottomBox {
         position: fixed;
         top: 60vh;
-        left: 39.3vw; 
+        left: 35.5vw; 
         transform: translateX(-50%); 
       }
 
       .leftBox {
-        width: 30%;
+        width: 25%;
         height: 88%;
         border-radius: 15px;
         background-color: white;
@@ -69,7 +69,7 @@
     }
 
     .rightBox {
-      width: 60%;
+      width: 65%;
       height: 88%;
       border-radius: 15px;
       background-color: white;
