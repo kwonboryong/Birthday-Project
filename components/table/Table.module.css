@@ -1,0 +1,13 @@
+.tableContainer {
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    .td {
+      padding: 7px;
+      text-align: center;
+      border: 1px solid #cdcccc;
+    }
+  }
+}

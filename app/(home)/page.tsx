@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Home.module.css";
+import Table from "../../components/table/Table";
 
 export default function Home() {
   return (
@@ -34,60 +35,7 @@ export default function Home() {
       <div className={styles.bgm}>
         <p className={styles.title}>💿Playlist Picks</p>
         <div className={styles.decorative}>
-          <div className="table-container">
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/58IEh6YkuzQ?si=L69fwefW5yurRyB1"}
-                    >
-                      오르트 구름
-                    </Link>
-                  </td>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/l-H4QHLC-Uc?si=JbUf5uzpyZqwgQg1"}
-                    >
-                      HAPPY
-                    </Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/2tda_TCjz8w?si=I8ElINeeOn1v8u_9"}
-                    >
-                      Girls Never Die
-                    </Link>
-                  </td>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/XV0lSvr0huU?si=wkrRDrR2fXtajnqd"}
-                    >
-                      너와의 모든 시간
-                    </Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/B9vB01PEnzE?si=j7iadB_b40ZH986M"}
-                    >
-                      Counter
-                    </Link>
-                  </td>
-                  <td>
-                    <Link
-                      href={"https://youtu.be/hrXCP0xeoA8?si=WDuLDgDMe1aREchc"}
-                    >
-                      행운을 빌어줘
-                    </Link>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <Table />
         </div>
       </div>
 
