@@ -1,6 +1,8 @@
 "use client";
 import { useRef, useState } from "react";
 import styles from "./BGMPlayer.module.css";
+import { FaRegPlayCircle } from "react-icons/fa";
+import { FaRegPauseCircle } from "react-icons/fa";
 
 const BGMPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -28,11 +30,12 @@ const BGMPlayer = () => {
         <source src="/assets/audio/bgm.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
-      <button onClick={playAudio} disabled={isPlaying}>
-        Play
+
+      <button onClick={playAudio} disabled={isPlaying} className={styles.button}>
+        <FaRegPlayCircle/>
       </button>
-      <button onClick={pauseAudio} disabled={!isPlaying}>
-        Pause
+      <button onClick={pauseAudio} disabled={!isPlaying} className={styles.button}>
+        <FaRegPauseCircle/>
       </button>
     </div>
   );
