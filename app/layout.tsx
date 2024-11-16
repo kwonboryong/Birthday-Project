@@ -1,4 +1,5 @@
 import Background from "../components/background/Background";
+import BGMPlayer from "../components/bgm/BGMPlayer";
 import "../styles/global.css";
 
 export const metadata = {
@@ -14,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Background>{children}</Background>
+        <Background>
+          <BGMPlayer />
+          {children}
+        </Background>
       </body>
     </html>
   );
