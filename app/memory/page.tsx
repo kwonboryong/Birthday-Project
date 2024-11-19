@@ -6,7 +6,7 @@ export default function Memory() {
   return (
     <div className={styles.container}>
       {memory.map((item) => (
-        <MemoryCard id={item.id} src={item.src} text={item.text} />
+        <MemoryCard id={item.id} src={item.src} text={item.text} key={item.id} />
       ))}
     </div>
   );

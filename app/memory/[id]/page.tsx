@@ -4,14 +4,15 @@ import memory from "../../../memory";
 import styles from "./MemoryDetail.module.css";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 
-type Params = {
+type IParams = Promise<{
   id: string;
-};
+}>;
 
-export default function MemoryDetail({ params }: { params: Params }) {
+export default async function MemoryDetail(props: { params: IParams }) {
   const router = useRouter();
 
-  const { id } = params;
+  const params = await props.params;
+  const id = params.id;
   const memoryId = parseInt(id);
   const memoryItem = memory.find((item) => item.id === memoryId);
 
