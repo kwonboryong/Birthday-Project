@@ -9,7 +9,3 @@ next-env.d.ts
 /coverage
 
 public
-constant.js
-memory.js
-/memory.js
-
