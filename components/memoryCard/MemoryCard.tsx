@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "./MemoryCard.module.css";
 
-export default function MemoryCard({ id, src }) {
+export default function MemoryCard({ id, src, text }) {
   return (
     <div className={styles.container} key={id}>
-      <Link href={`/memory/${id}`}>
+      <Link href={`/memory/${text}`}>
         <img src={src} alt={`Memory ${id}`} className={styles.img} />
       </Link>
     </div>

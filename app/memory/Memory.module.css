@@ -1,7 +1,13 @@
 .container {
-  border: 1px solid red;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  column-gap: 15px;
+  row-gap: 23px;
+
+  width: 700px;
+  height: 460px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  padding-left: 30px;
 }
