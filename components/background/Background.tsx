@@ -67,8 +67,8 @@ export default function Background({ children }: BackgroundProps) {
               <Link href={"/"}>
                 <div className={styles.sideMenu}>홈</div>
               </Link>
-              <Link href={"/messagesFeed"}>
-                <div className={styles.sideMenu}>방명록</div>
+              <Link href={"/video"}>
+                <div className={styles.sideMenu}>비디오</div>
               </Link>
               <Link href={"/memory"}>
                 <div className={styles.sideMenu}>다이어리</div>
