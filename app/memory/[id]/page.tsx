@@ -1,10 +1,18 @@
+"use client";
+import { useRouter } from "next/navigation";
 import memory from "../../../memory";
 import styles from "./MemoryDetail.module.css";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 
-export default function MemoryDetail({ params: { id } }) {
-  const memoryId = parseInt(id);
+type Params = {
+  id: string;
+};
 
+export default function MemoryDetail({ params }: { params: Params }) {
+  const router = useRouter();
+
+  const { id } = params;
+  const memoryId = parseInt(id);
   const memoryItem = memory.find((item) => item.id === memoryId);
 
   if (!memoryItem) {
@@ -14,9 +22,9 @@ export default function MemoryDetail({ params: { id } }) {
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
-        <div className={styles.back}>
+        <button className={styles.backBtn} onClick={() => router.back()}>
           <IoReturnUpBackOutline />
-        </div>
+        </button>
         <h1 className={styles.title}>{memoryItem.text}</h1>
         <img
           src={memoryItem.src}
