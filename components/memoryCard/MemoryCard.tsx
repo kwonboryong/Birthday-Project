@@ -1,7 +1,13 @@
 import Link from "next/link";
 import styles from "./MemoryCard.module.css";
 
-export default function MemoryCard({ id, src, text }) {
+interface MemoryCardProps {
+  id: string;
+  src: string;
+  text: string;
+}
+
+const MemoryCard: React.FC<MemoryCardProps> = ({ id, src, text }) => {
   return (
     <div className={styles.container} key={id}>
       <Link href={`/memory/${id}`}>
@@ -9,4 +15,6 @@ export default function MemoryCard({ id, src, text }) {
       </Link>
     </div>
   );
-}
+};
+
+export default MemoryCard;

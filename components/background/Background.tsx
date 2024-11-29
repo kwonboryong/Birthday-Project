@@ -2,12 +2,11 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import styles from "./Background.module.css";
 
-// children을 받는 타입을 정의합니다.
 interface BackgroundProps {
-  children: ReactNode; // children을 받기 위한 prop 타입
+  children: ReactNode;
 }
 
-export default function Background({ children }: BackgroundProps) {
+const Background: React.FC<BackgroundProps> = ({ children }) => {
   return (
     <div className={styles.container}>
       <div className={styles.firstBox}>
@@ -58,7 +57,7 @@ export default function Background({ children }: BackgroundProps) {
                 "왜 울었냐고" <br /> "양파 때문이라고 대답했어" <br /> "....내가
                 양파냐......." <br />
               </p>
-                <p className={styles.profileMessageTitle}>- 개기면 죽는다 중 -</p>
+              <p className={styles.profileMessageTitle}>- 개기면 죽는다 중 -</p>
             </div>
           </div>
           <div className={styles.rightBox}>
@@ -79,4 +78,6 @@ export default function Background({ children }: BackgroundProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Background;
