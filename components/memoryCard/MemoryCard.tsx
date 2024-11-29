@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./MemoryCard.module.css";
 
 interface MemoryCardProps {
-  id: string;
+  id: number;
   src: string;
   text: string;
 }
