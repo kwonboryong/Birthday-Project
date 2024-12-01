@@ -1,9 +1,12 @@
 # Birthday-Project
-![싸이월드](https://github.com/user-attachments/assets/b9e69917-9968-405e-a963-f9f5a4e9c172)
+![nextJS 토이 프로젝트](https://github.com/user-attachments/assets/cbfd73b8-6cdc-4606-af7e-ac9bb72a970d)
 
+<br/>
 
 ## 기간
 - 2024.11.16 ~ 11.25
+
+<br/>
 
 ## 기술 스택
 - React: react, react-dom, react-router-dom
@@ -11,6 +14,7 @@
 - TypeScript
 - 애니메이션: framer-motion 
 - 아이콘: react-icons 
+- 배포: Vercel
 
 <br/><br/>
 
